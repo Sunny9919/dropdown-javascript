@@ -1,0 +1,7 @@
+// Code Added by Sunil 
+$.getJSON("GetVillages", function (data) {
+    $.each(data, function (i, data) {
+        $('<option>', { value: data.Pkey, text: data.VillageName }).html(data.description).appendTo("#AddressDTO_Communicationvillagename,#AddressDTO_PermanentVillage,#NomineDetailsMasterDTO_NomAddressDTO_Communicationvillagename,#GuardianDetailsDTO_GuarAddressDTO_Communicationvillagename");
+    })           
+
+})
